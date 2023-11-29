@@ -1,4 +1,4 @@
-const parseCode = (str) => {
+function parseCode(encodedString)  {
   // Split the encoded string using "000" as the separator
   const parts = encodedString.split("000");
 
@@ -13,7 +13,7 @@ const parseCode = (str) => {
     lastName: lastName,
     id: id
   };
-};
+}
 
 // Do not change the code below
 const str = prompt("Enter str: ");
